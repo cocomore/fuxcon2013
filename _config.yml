@@ -1,3 +1,4 @@
 name: BDD with CakePHP, Django, Drupal7, and Symfony2
 pygments: true
 relative_permalinks: false
+baseurl: /fuxcon2013
