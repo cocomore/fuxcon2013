@@ -1,0 +1,1 @@
+Symfony's signature feature is that it entirely consists of independent bundles. A package manager is therefore essential for its installation. Symfony's console tool is app/console. It can be used to clear cache or to generate CRUD code, amongst other functions. I used composer for the installation as described in http://fossil.cm.schettler.net/fuxcon2013_symfony . 

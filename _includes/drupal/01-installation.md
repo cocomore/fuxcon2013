@@ -1,0 +1,1 @@
+Drupal is very conveniently installed and managed using its command line tool drush. Drush can be used to install the core system as well as install and update all required modules. It is also used for day-to-day tasks like clearing cache, creating backups or running cron jobs. The installation steps are described in http://fossil.cm.schettler.net/fuxcon2013_drupal . 

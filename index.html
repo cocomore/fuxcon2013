@@ -1,109 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Behavior Driven Development with CakePHP, Django, Drupal7, and Symfony2</title>
-  <meta name="description" content="Material for a workshop at FUxCon 2013, Frankfurt / Germany">
-  <meta name="author" content="Dr. Olav Schettler, Cocomore AG">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-    }
+---
+layout: default
+title: BDD with CakePHP 2, Django 1.5, Drupal 7, and Symfony 2
+---
+<div class="jumbotron">
+  <h1>BDD with CakePHP&nbsp;2, Django&nbsp;1.5, Drupal&nbsp;7, and Symfony&nbsp;2</h1>
+  <p class="lead"><p>In <a href="http://fuxcon.de/">this workshop</a> I give an overview of Behavior Driven Development (BDD) with the PHP tools Behat and Mink. The workpiece is a simple portfolio site which I have implemented on the four platforms CakePHP, Django, Drupal, and Symfony with an identical set of features.</p>
+  
+  <a class="btn btn-large btn-success" href="http://www.cocomore.com/contact">Learn more</a>
+</div>
 
-    /* Custom container */
-    .container-narrow {
-      margin: 0 auto;
-      max-width: 700px;
-    }
-    .container-narrow > hr {
-      margin: 30px 0;
-    }
+<hr>
 
-    /* Main marketing message and sign up button */
-    .jumbotron {
-      margin: 60px 0;
-      text-align: center;
-    }
-    .jumbotron h1 {
-      font-size: 72px;
-      line-height: 1;
-    }
-    .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-    }
+<div class="row-fluid marketing">
+  <div class="span12">
+    <h4>Behavior Specification</h4>
+    <p>Why this project? BDD closes the gap between the agile requirements definition using user stories on the one hand and test-driven software development on the other hand.</p>
+  </div>
+</div>
+    
+<div class="row-fluid marketing">
+  <div class="span6">
+    <h4>CakePHP</h4>
+    <p>&hellip; is awesome, because
+    it makes building web applications simpler, faster, and require less code. 
+    Often needed components are built right in: Translation, database access, caching, form validation, authentication.
+    <a href="/cakephp/">mehr &hellip;</a></p>
 
-    /* Supporting marketing content */
-    .marketing {
-      margin: 60px 0;
-    }
-    .marketing p + h4 {
-      margin-top: 28px;
-    }
-  </style>
-</head>
-<body>
-    <div class="container-narrow">
+    <h4>Django</h4>
+    <p>&hellip; is awesome, because
+    it makes it easier to build better web apps more quickly and with less code.
+    <a href="/django/">mehr &hellip;</a></p>
+  </div>
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="http://www.cocomore.com">Cocomore</a></li>
-        </ul>
-        <h3 class="muted">FUxCon 2013</h3>
-      </div>
+  <div class="span6">
+    <h4>Drupal</h4>
+    <p>&hellip; is awesome, because
+    it is used on millions of websites, is supported by an active and diverse community, and is used for private weblogs as well as for enterprise applications.
+    <a href="/drupal/">mehr &hellip;</a></p>
 
-      <hr>
+    <h4>Symfony</h4>
+    <p>&hellip; is awesome, because
+    it accelerates building and maintaining PHP web applications. It replaces repetitive programming tasks with power, control, and fun.
+    <a href="/symfony/">mehr &hellip;</a></p>
+  </div>
+</div>
 
-      <div class="jumbotron">
-        <h1>BDD with CakePHP&nbsp;2, Django&nbsp;1.5, Drupal&nbsp;7, and Symfony&nbsp;2</h1>
-        <p class="lead"><p>In <a href="http://fuxcon.de/">this workshop</a> I give an overview of Behavior Driven Development (BDD) with the PHP tools Behat and Mink. The workpiece is a simple portfolio site which I have implemented on the four platforms CakePHP, Django, Drupal, and Symfony with an identical set of features.</p>
-        
-        <a class="btn btn-large btn-success" href="http://www.cocomore.com/contact">Learn more</a>
-      </div>
 
-      <hr>
 
-      <div class="row-fluid marketing">
-        <div class="span12">
-          <h4>Behavior Specification</h4>
-          <p>Why this project? BDD closes the gap between the agile requirements definition using user stories on the one hand and test-driven software development on the other hand.</p>
-        </div>
-      </div>
-          
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>CakePHP</h4>
-          <p>&hellip; is awesome, because
-          it makes building web applications simpler, faster, and require less code. 
-          Often needed components are built right in: Translation, database access, caching, form validation, authentication.</p>
 
-          <h4>Django</h4>
-          <p>&hellip; is awesome, because
-          it makes it easier to build better web apps more quickly and wil less code.</p>
-        </div>
-
-        <div class="span6">
-          <h4>Drupal</h4>
-          <p>&hellip; is awesome, because
-          it is used on millions of websites, is supported by an active and diverse community, and is used for private weblogs as well as for enterprise applications.</p>
-
-          <h4>Symfony</h4>
-          <p>&hellip; is awesome, because
-          it accelerates building and maintaining PHP web applications. It replaces repetitive programming tasks with power, control, and fun.</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="footer">
-        <p>&copy; Cocomore AG 2013</p>
-      </div>
-
-    </div> <!-- /container -->
-  </body>
-</html>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
