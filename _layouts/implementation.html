@@ -4,34 +4,34 @@ layout: default
 <div class="row-fluid">
   <div class="span3">
     <ul class="nav nav-list affix">
-      <li><a href="/behavior/">Behavior</a></li>
+      <li><a href="{{baseurl}}/behavior/">Behavior</a></li>
 
       <li class="nav-header">Topics</li>
-      <li><a href="/installation/">Installation</a></li>
-      <li><a href="/configuration/">Configuration</a></li>
-      <li><a href="/models/">Models</a></li>
-      <li><a href="/controllers/">Controllers</a></li>
-      <li><a href="/views/">Views</a></li>
-      <li><a href="/accounts/">Accounts</a></li>
-      <li><a href="/security/">Security</a></li>
-      <li><a href="/tagging/">Tagging</a></li>
-      <li><a href="/pictures/">Pictures</a></li>
-      <li><a href="/forms/">Forms</a></li>
-      <li><a href="/formatting/">Formatting</a></li>
-      <li><a href="/testdata/">Test data</a></li>
+      <li><a href="{{baseurl}}/installation/">Installation</a></li>
+      <li><a href="{{baseurl}}/configuration/">Configuration</a></li>
+      <li><a href="{{baseurl}}/models/">Models</a></li>
+      <li><a href="{{baseurl}}/controllers/">Controllers</a></li>
+      <li><a href="{{baseurl}}/views/">Views</a></li>
+      <li><a href="{{baseurl}}/accounts/">Accounts</a></li>
+      <li><a href="{{baseurl}}/security/">Security</a></li>
+      <li><a href="{{baseurl}}/tagging/">Tagging</a></li>
+      <li><a href="{{baseurl}}/pictures/">Pictures</a></li>
+      <li><a href="{{baseurl}}/forms/">Forms</a></li>
+      <li><a href="{{baseurl}}/formatting/">Formatting</a></li>
+      <li><a href="{{baseurl}}/testdata/">Test data</a></li>
     </ul>
   </div>
   <div class="span9">
     <div class="tabbable">
       <ul class="nav nav-tabs">
         <li{% if page.name == 'cakephp' %} class="active"{% endif %}>
-          <a href="/cakephp/">CakePHP</a></li>
+          <a href="{{baseurl}}/cakephp/">CakePHP</a></li>
         <li{% if page.name == 'django' %} class="active"{% endif %}>
-          <a href="/django/">Django</a></li>
+          <a href="{{baseurl}}/django/">Django</a></li>
         <li{% if page.name == 'drupal' %} class="active"{% endif %}>
-          <a href="/drupal/">Drupal</a></li>
+          <a href="{{baseurl}}/drupal/">Drupal</a></li>
         <li{% if page.name == 'symfony' %} class="active"{% endif %}>
-          <a href="/symfony/">Symfony</a></li>
+          <a href="{{baseurl}}/symfony/">Symfony</a></li>
       </ul>
       <div class="tab-content">
           <h1>{{ page.title }}</h1>
