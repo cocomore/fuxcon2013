@@ -1,1 +1,3 @@
-I downloaded CakePHP from the website http://cakephp.org and prepared it as described in http://fossil.cm.schettler.net/fuxcon2013_cakephp . Cake comes with a command line tool app/Console/cake which is used for mundane tasks like code generation, clearing cache of performing database migrations. 
+I downloaded CakePHP from the website http://cakephp.org and prepared it as described in its [README](https://github.com/cocomore/fuxcon2013_cakephp#readme). Cake comes with a command line tool app/Console/cake which is used for mundane tasks like code generation, clearing cache of performing database migrations. 
+
+You can get the code for this implementation from its [github repository](https://github.com/cocomore/fuxcon2013_cakephp/).

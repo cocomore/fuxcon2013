@@ -2,4 +2,6 @@ Django follows the Python philosophy of having batteries included. However, even
 
 Once Django is installed, a command line tool manage.py is used for all tasks like starting a development server or performing database migrations. 
 
-The installation steps a re described in http://fossil.cm.schettler.net/fuxcon2013_django .
+The installation steps a re described in its [README](https://github.com/cocomore/fuxcon2013_django#readme).
+
+You can get the code for this implementation from its [github repository](https://github.com/cocomore/fuxcon2013_django/).
