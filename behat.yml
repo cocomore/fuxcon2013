@@ -1,0 +1,13 @@
+#
+default:
+  context:
+    parameters:
+      base_url: http://fuxcon2013.local/
+  paths:
+    features: features
+    bootstrap: %behat.paths.features%/bootstrap
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: http://cakephp.fuxcon2013.local/
+      goutte: ~
+
