@@ -1,35 +1,29 @@
-## Views 
-
-
-Symfony provides its own template language called Twigs which very closely resembles the Django template language. Here is an excerpt from the project list in src/FUxCon2013/ProjectsBundle/Resources/views/Projects/index.html.twig:
+Symfony provides its own template language called Twig which very closely resembles the Django template language. Here is an excerpt from the project list in src/FUxCon2013/ProjectsBundle/Resources/views/Projects/index.html.twig:
 
 {% highlight html %}
-{{'{'}}% extends 'FUxCon2013ProjectsBundle::layout.html.twig' %}
-
-{{'{'}}% block content %}
-
+{% raw %}
+{% extends 'FUxCon2013ProjectsBundle::layout.html.twig' %}
+{% block content %}
      <div class="row-fluid marketing projects">
-
-    {{'{'}}% for column in columns %}
-            {% raw %}<div class="span{{ width }}">{% endraw %}
-          {{{'{'}}% for project in column %}
+    {% for column in columns %}
+            <div class="span{{ width }}">
+          {% for project in column %}
             <div class="project">
                 <h4>
-                    {% raw %}<a href="{{ path('_project', { 'id': project.id } ) }}">{{ project.title }}</a>{% endraw %}
+                    <a href="{{ path('_project', { 'id': project.id } ) }}">{{ project.title }}</a>
                 </h4>
-                {% raw %}<a href="{{ path('_project', { 'id': project.id } ) }}">{% endraw %}
-
-                    {% raw %}<img src="{{ thumbnail([ '/images/projects/', project.id, '.png' ] | join, '200x200') }}">{% endraw %}
+                <a href="{{ path('_project', { 'id': project.id } ) }}">
+                    <img src="{{ thumbnail([ '/images/projects/', project.id, '.png' ] | join, '200x200') }}">
                 </a>
-                {% raw %}<p>{{ project.about | truncate }}</p>{% endraw %}
+                <p>{{ project.about | truncate }}</p>
             </div>
-          {{'{'}}% endfor %}
+          {% endfor %}
           </div>
-    {{'{'}}% endfor %}
+    {% endfor %}
      </div>
-
-    {{'{'}}% include 'FUxCon2013ProjectsBundle::_paginate.html.twig' with { 'default_page': '_projects' } %}
-{{'{'}}% endblock %}
+    {% include 'FUxCon2013ProjectsBundle::_paginate.html.twig' with { 'default_page': '_projects' } %}
+{% endblock %}
+{% endraw %}
 {% endhighlight %}
 
 Symfony uses named routes to generate URIs through the path() function. Loop and conditional constructs look like their Python cousins.  
@@ -37,33 +31,30 @@ Symfony uses named routes to generate URIs through the path() function. Loop and
 This template uses extension to embed its markup into a common layout. The general structure of our layout file src/FUxCon2013/ProjectsBundle/Resources/views/layout.html.twig looks like this:
 
 {% highlight html %}
+{% raw %}
 <!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>{{'{'}}% block title %}Projects{{'{'}}% endblock %}</title>
-
-    {% raw %}<link href="{{ asset('bundles/fuxcon2013/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">{% endraw %}
-    {% raw %}<link href="{{ asset('bundles/fuxcon2013/css/sites.css') }}" rel="stylesheet">{% endraw %}
+    <title>{% block title %}Projects{% endblock %}</title>
+    <link href="{{ asset('bundles/fuxcon2013/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/fuxcon2013/css/sites.css') }}" rel="stylesheet">
   </head>
 
   <body>
     <div class="container-narrow">
-      {{'{'}}% for flashMessage in app.session.flashbag.get('notice') %}
+      {% for flashMessage in app.session.flashbag.get('notice') %}
+          <div class="flash-message">{{ flashMessage }}</div>
+      {% endfor %}
 
-          {% raw %}<div class="flash-message">{{ flashMessage }}</div>{% endraw %}
-      {{'{'}}% endfor %}
-
-      {{'{'}}% block content %}
-
-      {{'{'}}% endblock %}
+      {% block content %}
+      {% endblock %}
 
     </div> <!-- /.container-narrow -->
   </body>
-
 </html>
+{% endraw %}
 {% endhighlight %}
-
  
 The template views/Projects/index.html.twig provides overwrites for the blocks defined in this layout file.
 
@@ -76,15 +67,12 @@ namespace FUxCon2013\ProjectsBundle\Twig\Extension;
 use Symfony\Bundle\TwigBundle\Extension\AssetsExtension;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-
 class FUxCon2013Extension extends \Twig_Extension
 {
   private $container;
 
   public function __construct(ContainerInterface $container)
-  {
-    $this->container = $container;
-  }
+  { $this->container = $container; }
 
   public function getFunctions()
   {
@@ -125,9 +113,7 @@ class FUxCon2013Extension extends \Twig_Extension
   }
 
   public function getName()
-  {
-    return 'fuxcon2013_extension';
-  }
+  { return 'fuxcon2013_extension'; }
 }
 {% endhighlight %}
 

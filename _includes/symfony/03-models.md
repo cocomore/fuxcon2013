@@ -1,9 +1,7 @@
-## Models
-
 Symfony manages models through one of its supported database backends. The default is to use the doctrine backend. As with Django, you declare your model fields in either XML, YML or as annotations and use a command line tool to generate the tables in your MySQL database, e.g.
 
 {% highlight bash %}
-     php app/console doctrine:generate:entities FUxCon2013/ProjectsBundle/Entity/Project
+php app/console doctrine:generate:entities FUxCon2013/ProjectsBundle/Entity/Project
 {% endhighlight %}
 
 Doctrine requires the definition of a getter and a setter for each field. I have opted to use magic methods in a super class to avoid this. Here is the project model from the Symfony implementation in src/FUxCon2013/ProjectsBundle/Entity/Project.php:
@@ -29,8 +27,8 @@ The super class makes sure that with this arrangement the code to be written kee
 
 {% highlight php %}
 <?php
-     $p = new Project();
-     echo $p->getTitle();
+$p = new Project();
+echo $p->getTitle();
 {% endhighlight %}
 
 Unfortunately, the form generator we want to use for the edit form does some checking on the access level of attributes directly and does not seem to see the getters inherited from the super class. We cannot declare attributes protected because of this.  

@@ -15,10 +15,8 @@ permalink: /cakephp/
 {% include cakephp/04-controllers.md %}
 ## Appearance - the views
 {% include cakephp/05-views.md %}
-## User accounts, roles and permissions
+## User accounts & security
 {% include cakephp/06-accounts.md %}
-## Security - only admins and owners can edit
-{% include cakephp/07-security.md %}
 ## Assiging topics to projects with tagging 
 {% include cakephp/08-tagging.md %}
 ## Picture uploading and scaling

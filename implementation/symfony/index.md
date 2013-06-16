@@ -14,10 +14,8 @@ permalink: /symfony/
 {% include symfony/04-controllers.md %}
 ## Appearance - the views
 {% include symfony/05-views.md %}
-## User accounts, roles and permissions
+## User accounts & security
 {% include symfony/06-accounts.md %}
-## Security - only admins and owners can edit
-{% include symfony/07-security.md %}
 ## Assiging topics to projects with tagging 
 {% include symfony/08-tagging.md %}
 ## Picture uploading and scaling

@@ -1,10 +1,9 @@
 ---
-title: Accounts
+title: Accounts & Security
 name: accounts
 layout: topic
 permalink: /accounts/
 ---
-
 ## CakePHP
 {% include cakephp/06-accounts.md %}
 

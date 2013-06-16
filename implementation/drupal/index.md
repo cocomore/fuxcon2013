@@ -15,10 +15,8 @@ permalink: /drupal/
 {% include drupal/04-controllers.md %}
 ## Appearance - themes and templates
 {% include drupal/05-views.md %}
-## User accounts, roles and permissions
+## User accounts & security
 {% include drupal/06-accounts.md %}
-## Security - only admins and owners can edit
-{% include drupal/07-security.md %}
 ## Assiging topics to projects with tagging 
 {% include drupal/08-tagging.md %}
 ## Picture uploading and scaling

@@ -15,10 +15,8 @@ permalink: /django/
 {% include django/04-controllers.md %}
 ## Appearance - the templates
 {% include django/05-views.md %}
-## User accounts, roles and permissions
+## User accounts & security
 {% include django/06-accounts.md %}
-## Security - only admins and owners can edit
-{% include django/07-security.md %}
 ## Assiging topics to projects with tagging 
 {% include django/08-tagging.md %}
 ## Picture uploading and scaling
