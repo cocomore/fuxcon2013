@@ -17,6 +17,8 @@ permalink: /cakephp/
 {% include cakephp/05-views.md %}
 ## User accounts & security
 {% include cakephp/06-accounts.md %}
+
+{% comment %}
 ## Assiging topics to projects with tagging 
 {% include cakephp/08-tagging.md %}
 ## Picture uploading and scaling
@@ -27,3 +29,4 @@ permalink: /cakephp/
 {% include cakephp/11-formatting.md %}
 ## Test data generation
 {% include cakephp/12-testdata.md %}
+{% endcomment %}

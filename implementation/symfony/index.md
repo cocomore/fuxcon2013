@@ -16,6 +16,8 @@ permalink: /symfony/
 {% include symfony/05-views.md %}
 ## User accounts & security
 {% include symfony/06-accounts.md %}
+
+{% comment %}
 ## Assiging topics to projects with tagging 
 {% include symfony/08-tagging.md %}
 ## Picture uploading and scaling
@@ -26,3 +28,4 @@ permalink: /symfony/
 {% include symfony/11-formatting.md %}
 ## Test data generation
 {% include symfony/12-testdata.md %}
+{% endcomment %}

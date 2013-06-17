@@ -17,6 +17,8 @@ permalink: /drupal/
 {% include drupal/05-views.md %}
 ## User accounts & security
 {% include drupal/06-accounts.md %}
+
+{% comment %}
 ## Assiging topics to projects with tagging 
 {% include drupal/08-tagging.md %}
 ## Picture uploading and scaling
@@ -27,3 +29,4 @@ permalink: /drupal/
 {% include drupal/11-formatting.md %}
 ## Test data generation
 {% include drupal/12-testdata.md %}
+{% endcomment %}

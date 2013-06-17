@@ -17,6 +17,8 @@ permalink: /django/
 {% include django/05-views.md %}
 ## User accounts & security
 {% include django/06-accounts.md %}
+
+{% comment %}
 ## Assiging topics to projects with tagging 
 {% include django/08-tagging.md %}
 ## Picture uploading and scaling
@@ -27,3 +29,4 @@ permalink: /django/
 {% include django/11-formatting.md %}
 ## Test data generation
 {% include django/12-testdata.md %}
+{% endcomment %}
