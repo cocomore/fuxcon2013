@@ -4,13 +4,21 @@
   <meta charset="utf-8">
   <title>{{ page.title }} | {{ site.name }}</title>
   <meta name="description" content="Material for a workshop at FUxCon 2013, Frankfurt / Germany">
-  <meta name="host" content="{{site.host}}">
   <meta name="author" content="Dr. Olav Schettler, Cocomore AG">
+  {% if site.host == "127.0.0.1" %}
+  <link href="{{ site.baseurl }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  {% else %}
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  {% endif %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">  
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"> 
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  {% if site.host == "127.0.0.1" %}
+  <script src="{{ site.baseurl }}/bootstrap/js/jquery-1.9.1.min.js"></script>
+  <script src="{{ site.baseurl }}/bootstrap/js/bootstrap.min.js"></script>
+  {% else %}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  {% endif %}
 </head>
 <body>
     <div class="container-narrow">
