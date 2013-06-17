@@ -4,7 +4,7 @@ name: forms
 layout: topic
 permalink: /forms/
 ---
-
+{% comment %}
 ## CakePHP
 {% include cakephp/10-forms.md %}
 
@@ -16,3 +16,4 @@ permalink: /forms/
 
 ## Symfony
 {% include symfony/10-forms.md %}
+{% endcomment %}

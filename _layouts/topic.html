@@ -19,6 +19,7 @@ layout: default
         <a href="{{ site.baseurl }}/views/">Views</a></li>
       <li{% if page.name == 'accounts' %} class="active"{% endif %}>
         <a href="{{ site.baseurl }}/accounts/">Accounts &amp; Security</a></li>
+{% comment %}        
       <li{% if page.name == 'tagging' %} class="active"{% endif %}>
         <a href="{{ site.baseurl }}/tagging/">Tagging</a></li>
       <li{% if page.name == 'pictures' %} class="active"{% endif %}>
@@ -29,7 +30,7 @@ layout: default
         <a href="{{ site.baseurl }}/formatting/">Formatting</a></li>
       <li{% if page.name == 'testdata' %} class="active"{% endif %}>
         <a href="{{ site.baseurl }}/testdata/">Test data</a></li>
-
+{% endcomment %}
         <li class="nav-header">Implementations</li>
         <li><a href="{{ site.baseurl }}/cakephp/">CakePHP</a></li>
         <li><a href="{{ site.baseurl }}/django/">Django</a></li>

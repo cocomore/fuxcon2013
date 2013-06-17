@@ -4,7 +4,7 @@ name: pictures
 layout: topic
 permalink: /pictures/
 ---
-
+{% comment %}
 ## CakePHP
 {% include cakephp/09-pictures.md %}
 
@@ -16,3 +16,4 @@ permalink: /pictures/
 
 ## Symfony
 {% include symfony/09-pictures.md %}
+{% endcomment %}

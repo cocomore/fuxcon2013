@@ -4,7 +4,7 @@ name: formatting
 layout: topic
 permalink: /formatting/
 ---
-
+{% comment %}
 ## CakePHP
 {% include cakephp/11-formatting.md %}
 
@@ -16,3 +16,4 @@ permalink: /formatting/
 
 ## Symfony
 {% include symfony/11-formatting.md %}
+{% endcomment %}
