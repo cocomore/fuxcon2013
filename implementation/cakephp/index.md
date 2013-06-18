@@ -21,10 +21,10 @@ permalink: /cakephp/
 {% include cakephp/08-tagging.md %}
 ## Picture uploading and scaling
 {% include cakephp/09-pictures.md %}
-
-{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include cakephp/10-forms.md %}
+
+{% comment %}
 ## Text formatting with Markdown
 {% include cakephp/11-formatting.md %}
 ## Test data generation

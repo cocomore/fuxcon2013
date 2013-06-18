@@ -21,10 +21,10 @@ permalink: /drupal/
 {% include drupal/08-tagging.md %}
 ## Picture uploading and scaling
 {% include drupal/09-pictures.md %}
-
-{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include drupal/10-forms.md %}
+
+{% comment %}
 ## Text formatting with Markdown
 {% include drupal/11-formatting.md %}
 ## Test data generation

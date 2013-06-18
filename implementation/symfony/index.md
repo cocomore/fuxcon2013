@@ -20,10 +20,10 @@ permalink: /symfony/
 {% include symfony/08-tagging.md %}
 ## Picture uploading and scaling
 {% include symfony/09-pictures.md %}
-
-{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include symfony/10-forms.md %}
+
+{% comment %}
 ## Text formatting with Markdown
 {% include symfony/11-formatting.md %}
 ## Test data generation

@@ -21,10 +21,10 @@ permalink: /django/
 {% include django/08-tagging.md %}
 ## Picture uploading and scaling
 {% include django/09-pictures.md %}
-
-{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include django/10-forms.md %}
+
+{% comment %}
 ## Text formatting with Markdown
 {% include django/11-formatting.md %}
 ## Test data generation
