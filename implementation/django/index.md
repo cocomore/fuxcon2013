@@ -17,10 +17,10 @@ permalink: /django/
 {% include django/05-views.md %}
 ## User accounts & security
 {% include django/06-accounts.md %}
-
-{% comment %}
 ## Assiging topics to projects with tagging 
 {% include django/08-tagging.md %}
+
+{% comment %}
 ## Picture uploading and scaling
 {% include django/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 

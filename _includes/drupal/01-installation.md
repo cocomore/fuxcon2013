@@ -1,6 +1,6 @@
 Drupal is very conveniently installed and managed using its command line tool drush. Drush can be used to install the core system as well as install and update all required modules. It is also used for day-to-day tasks like clearing cache, creating backups or running cron jobs. 
 
-The installation steps a re described in its [README](https://github.com/cocomore/fuxcon2013_drupal#readme).
+The installation steps are described in its [README](https://github.com/cocomore/fuxcon2013_drupal#readme).
 
 You can get the code for this implementation from its [github repository](https://github.com/cocomore/fuxcon2013_drupal/).
 

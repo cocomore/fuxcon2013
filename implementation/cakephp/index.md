@@ -17,10 +17,10 @@ permalink: /cakephp/
 {% include cakephp/05-views.md %}
 ## User accounts & security
 {% include cakephp/06-accounts.md %}
-
-{% comment %}
 ## Assiging topics to projects with tagging 
 {% include cakephp/08-tagging.md %}
+
+{% comment %}
 ## Picture uploading and scaling
 {% include cakephp/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 

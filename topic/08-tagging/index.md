@@ -4,8 +4,6 @@ name: tagging
 layout: topic
 permalink: /tagging/
 ---
-
-{% comment %}
 ## CakePHP
 {% include cakephp/08-tagging.md %}
 
@@ -17,4 +15,3 @@ permalink: /tagging/
 
 ## Symfony
 {% include symfony/08-tagging.md %}
-{% endcomment %}

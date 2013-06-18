@@ -18,9 +18,10 @@ permalink: /drupal/
 ## User accounts & security
 {% include drupal/06-accounts.md %}
 
-{% comment %}
 ## Assiging topics to projects with tagging 
 {% include drupal/08-tagging.md %}
+
+{% comment %}
 ## Picture uploading and scaling
 {% include drupal/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 

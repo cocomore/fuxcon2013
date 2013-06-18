@@ -16,10 +16,10 @@ permalink: /symfony/
 {% include symfony/05-views.md %}
 ## User accounts & security
 {% include symfony/06-accounts.md %}
-
-{% comment %}
 ## Assiging topics to projects with tagging 
 {% include symfony/08-tagging.md %}
+
+{% comment %}
 ## Picture uploading and scaling
 {% include symfony/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 
