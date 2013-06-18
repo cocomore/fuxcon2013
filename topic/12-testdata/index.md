@@ -4,7 +4,6 @@ name: testdata
 layout: topic
 permalink: /testdata/
 ---
-{% comment %}
 ## CakePHP
 {% include cakephp/12-testdata.md %}
 
@@ -16,4 +15,3 @@ permalink: /testdata/
 
 ## Symfony
 {% include symfony/12-testdata.md %}
-{% endcomment %}

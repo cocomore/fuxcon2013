@@ -18,10 +18,10 @@ permalink: /symfony/
 {% include symfony/06-accounts.md %}
 ## Assiging topics to projects with tagging 
 {% include symfony/08-tagging.md %}
-
-{% comment %}
 ## Picture uploading and scaling
 {% include symfony/09-pictures.md %}
+
+{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include symfony/10-forms.md %}
 ## Text formatting with Markdown

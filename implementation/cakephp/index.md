@@ -19,10 +19,10 @@ permalink: /cakephp/
 {% include cakephp/06-accounts.md %}
 ## Assiging topics to projects with tagging 
 {% include cakephp/08-tagging.md %}
-
-{% comment %}
 ## Picture uploading and scaling
 {% include cakephp/09-pictures.md %}
+
+{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include cakephp/10-forms.md %}
 ## Text formatting with Markdown

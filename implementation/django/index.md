@@ -19,10 +19,10 @@ permalink: /django/
 {% include django/06-accounts.md %}
 ## Assiging topics to projects with tagging 
 {% include django/08-tagging.md %}
-
-{% comment %}
 ## Picture uploading and scaling
 {% include django/09-pictures.md %}
+
+{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include django/10-forms.md %}
 ## Text formatting with Markdown

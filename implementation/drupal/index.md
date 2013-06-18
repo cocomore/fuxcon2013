@@ -17,13 +17,12 @@ permalink: /drupal/
 {% include drupal/05-views.md %}
 ## User accounts & security
 {% include drupal/06-accounts.md %}
-
 ## Assiging topics to projects with tagging 
 {% include drupal/08-tagging.md %}
-
-{% comment %}
 ## Picture uploading and scaling
 {% include drupal/09-pictures.md %}
+
+{% comment %}
 ## Forms and CRUD - Creating and updating projects 
 {% include drupal/10-forms.md %}
 ## Text formatting with Markdown
