@@ -33,3 +33,27 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
+
+/*FEEDBACK BUTTON */
+.fixed-bottom {
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+}
+a.btn-primary,
+a.btn-primary:hover,
+a.btn-info,
+a.btn-info:hover {
+  color: white;
+}
+.modal {
+  width: 340px;
+}
+#field-email2 {
+  display: none;
+}
+
+#field-body textarea {
+  height: 8em;
+}
+

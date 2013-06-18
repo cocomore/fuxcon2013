@@ -19,39 +19,57 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   {% endif %}
+  <script type="text/javascript" src="{{ site.contact_url }}/contact.js"></script>
 </head>
 <body>
-    <div class="container-narrow">
+  <a title="Was können wir für Sie tun?" href="#feedback-modal" class="btn btn-info fixed-bottom" data-toggle="modal">
+    <i class="icon-exclamation-sign icon-white"></i> Contact
+  </a>
+  <div class="container-narrow">
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Code<b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="//github.com/cocomore/fuxcon2013#readme">Behavior</a></li>
-              <li class="divider"></li>
-              <li><a href="//github.com/cocomore/fuxcon2013_cakephp#readme">CakePHP 2.3</a></li>
-              <li><a href="//github.com/cocomore/fuxcon2013_django#readme">Django 1.5</a></li>
-              <li><a href="//github.com/cocomore/fuxcon2013_drupal#readme">Drupal 7.22</a></li>
-              <li><a href="//github.com/cocomore/fuxcon2013_symfony#readme">Symfony 2.3</a></li>
-            </ul><!-- .dropdown-menu -->
-          </li>
-          <li><a href="http://www.cocomore.com/">Cocomore</a></li>
-        </ul>
-        <h3 class="muted">FUxCon 2013</h3>
-      </div>
+    <div class="masthead">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Code<b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="//github.com/cocomore/fuxcon2013#readme">Behavior</a></li>
+            <li class="divider"></li>
+            <li><a href="//github.com/cocomore/fuxcon2013_cakephp#readme">CakePHP 2.3</a></li>
+            <li><a href="//github.com/cocomore/fuxcon2013_django#readme">Django 1.5</a></li>
+            <li><a href="//github.com/cocomore/fuxcon2013_drupal#readme">Drupal 7.22</a></li>
+            <li><a href="//github.com/cocomore/fuxcon2013_symfony#readme">Symfony 2.3</a></li>
+          </ul><!-- .dropdown-menu -->
+        </li>
+        <li><a href="http://www.cocomore.com/">Cocomore</a></li>
+      </ul>
+      <h3 class="muted">FUxCon 2013</h3>
+    </div>
 
-      <hr>
-      {{ content }}
-      <hr>
+    <hr>
+    {{ content }}
+    <hr>
 
-      <div class="footer">
-        <p class="pull-right">&copy; 2013 Dr. Olav Schettler // <a href="http://www.cocomore.com/">Cocomore AG</a></p>
-      </div>
+    <div class="footer">
+      <p class="pull-right">&copy; 2013 Dr. Olav Schettler // <a href="http://www.cocomore.com/">Cocomore AG</a></p>
+    </div>
 
-    </div> <!-- /container -->
-  </body>
+  </div> <!-- /container -->
+  <form class="hide modal fade" id="feedback-modal">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">×</a>
+      <h3>Your direct link to us</h3>
+    </div>
+    <div class="modal-body">
+      <p id="message" class="alert alert-success hide"></p>
+      <p id="ask">Write us what you think!</p>
+      <div id="fields"></div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </form>
+</body>
 </html>
