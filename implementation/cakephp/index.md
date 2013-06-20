@@ -23,10 +23,10 @@ permalink: /cakephp/
 {% include cakephp/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 
 {% include cakephp/10-forms.md %}
-
-{% comment %}
 ## Text formatting with Markdown
 {% include cakephp/11-formatting.md %}
+
+{% comment %}
 ## Test data generation
 {% include cakephp/12-testdata.md %}
 {% endcomment %}

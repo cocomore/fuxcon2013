@@ -22,10 +22,10 @@ permalink: /symfony/
 {% include symfony/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 
 {% include symfony/10-forms.md %}
-
-{% comment %}
 ## Text formatting with Markdown
 {% include symfony/11-formatting.md %}
+
+{% comment %}
 ## Test data generation
 {% include symfony/12-testdata.md %}
 {% endcomment %}

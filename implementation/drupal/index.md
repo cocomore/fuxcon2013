@@ -23,10 +23,10 @@ permalink: /drupal/
 {% include drupal/09-pictures.md %}
 ## Forms and CRUD - Creating and updating projects 
 {% include drupal/10-forms.md %}
-
-{% comment %}
 ## Text formatting with Markdown
 {% include drupal/11-formatting.md %}
+
+{% comment %}
 ## Test data generation
 {% include drupal/12-testdata.md %}
 {% endcomment %}
