@@ -25,8 +25,5 @@ permalink: /drupal/
 {% include drupal/10-forms.md %}
 ## Text formatting with Markdown
 {% include drupal/11-formatting.md %}
-
-{% comment %}
 ## Test data generation
 {% include drupal/12-testdata.md %}
-{% endcomment %}

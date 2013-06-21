@@ -24,8 +24,5 @@ permalink: /symfony/
 {% include symfony/10-forms.md %}
 ## Text formatting with Markdown
 {% include symfony/11-formatting.md %}
-
-{% comment %}
 ## Test data generation
 {% include symfony/12-testdata.md %}
-{% endcomment %}

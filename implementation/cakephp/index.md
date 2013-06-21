@@ -25,8 +25,5 @@ permalink: /cakephp/
 {% include cakephp/10-forms.md %}
 ## Text formatting with Markdown
 {% include cakephp/11-formatting.md %}
-
-{% comment %}
 ## Test data generation
 {% include cakephp/12-testdata.md %}
-{% endcomment %}
